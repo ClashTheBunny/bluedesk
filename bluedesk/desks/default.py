@@ -56,7 +56,7 @@ class DefaultDesk:
             "99fa0020-338a-1024-8a49-009c0215f78a", 26) is False:
             return False
 
-        if self._addr[0:8] != "e4:d1:a7":
+        if self._addr[0:8] not in [ "e4:d1:a7", "f2:1a:9b"]:
             return False
 
         return True
